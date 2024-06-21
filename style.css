@@ -7,3 +7,19 @@ body {
 main {
     padding: 32px;
 }
+
+#progress {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    background-color: red;
+    height: 1em;
+
+    animation: progress-grow auto linear;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes progress-grow {
+    from { width: 0%; }
+    to { width: 100%; }
+}
